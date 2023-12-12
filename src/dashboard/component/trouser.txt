@@ -1,0 +1,109 @@
+ <div
+    [ngClass]="
+      !_themeService.darkMode.getValue()
+        ? 'bg-[url(assets/images/light-mode-bg.svg)] bg-cover h-screen'
+        : 'bg-[url(assets/images/main-bg.svg)] bg-cover h-screen'
+    "
+    class="translate-y-full z-[99999] fixed bottom-0 flex-col max-w-full bg-cover shadow-sm outline-none transition duration-300 ease-in-out text-cockpit_secondary-700 left-0 right-0 border-none h-full max-h-full"
+    tabindex="-1"
+    id="offcanvasBottom"
+    *ngIf="openTrouser"
+  >
+    <div class="trouser-cockpit-header">
+      <div class="flex justify-between">
+        <div class="flex items-center gap-4 col-span-1">
+          <svg-icon
+            [src]="_commonService.Images.SINGLE_USER_SVG"
+            svgClass="text-white xl:h-12 xl:w-12 iconColor"
+          ></svg-icon>
+
+          <p
+            class="text-cockpit_white dark:text-cockpit_primary-900 text-lg 4xl:!text-2xl font-semibold"
+          >
+          <app-secure-display [valueToDisplay]=" trouSerDataByCustomerId?.name "></app-secure-display>
+          </p>
+        </div>
+
+        <div class="w-2/3">
+          <app-trouser-head-lable-value
+            [trouserLableValue]="trouserLableValue"
+          ></app-trouser-head-lable-value>
+        </div>
+
+        <div class="flex justify-end">
+          <button type="button" title="close" (click)="closeTrouser()">
+            <svg-icon
+              [src]="_commonService.Images.CROSS_ICONS"
+              svgClass="cross-icon"
+            ></svg-icon>
+          </button>
+        </div>
+      </div>
+
+      <hr
+        class="my-4 border border-solid border-cockpit_gray-700 dark:border-cockpit_gray-200"
+      />
+      <div class="flex items-center gap-8">
+        <ng-container *ngFor="let item of trouserTabArray">
+          <app-cockpit-trouser-buttons
+            [activeTab]="activeTab"
+            [item]="item"
+            [trouserTabFilter]="trouserTabFilter"
+            (click)="trouserTabFilter?.includes(item) ? getActiveTab(item) : ''"
+          ></app-cockpit-trouser-buttons>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="px-5 py-6 h-[85vh]">
+      <div *ngIf="activeTab == _commonService.Enums.AVATAR_DASHBOARD">
+        <app-avatar-dashboard
+          *ngIf="activeTab == _commonService.Enums.AVATAR_DASHBOARD"
+          [customerId]="trouSerDataByCustomerId?.id"
+        ></app-avatar-dashboard>
+      </div>
+
+      <div *ngIf="activeTab == _commonService.Enums.PROFILE_CAPITALISED">
+        <app-profile
+          *ngIf="activeTab == _commonService.Enums.PROFILE_CAPITALISED"
+          [customerId]="trouSerDataByCustomerId?.id"
+          (notifyTheMasterComponent)="
+            notifyFunctionForChildComponentCustomerId($event)
+          "
+        ></app-profile>
+      </div>
+      <div *ngIf="activeTab == _commonService.Enums.SCENARIO_SETTINGS">
+        <app-scenario-settings
+          *ngIf="activeTab == _commonService.Enums.SCENARIO_SETTINGS"
+          [customerId]="trouSerDataByCustomerId?.id"
+          (notifyTheMasterComponent)="
+            notifyFunctionForChildComponentCustomerId($event)
+          "
+        ></app-scenario-settings>
+      </div>
+      <div
+        class="h-full"
+        *ngIf="activeTab == _commonService.Enums.SCENARIO_COMPARISON"
+      >
+        <app-charts-comparison
+          *ngIf="activeTab == _commonService.Enums.SCENARIO_COMPARISON"
+          [customerId]="trouSerDataByCustomerId?.id"
+        ></app-charts-comparison>
+      </div>
+      <div *ngIf="activeTab == _commonService.Enums.INSIGHTS">
+        <app-insights
+          *ngIf="activeTab == _commonService.Enums.INSIGHTS"
+          [customerId]="trouSerDataByCustomerId?.id"
+        ></app-insights>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  let bottomDrawserEl = document.querySelector("#offcanvasBottom");
+    bottomDrawserEl?.classList.add("open-drawer-sitedetails");
+    console.log(bottomDrawserEl,);

@@ -1,3 +1,16 @@
 .inputs {
   @apply bg-gray-800   focus:bg-[#17213F] xl:h-10  xl:text-base relative flex-auto min-w-0 block w-full px-3 py-1.5  font-normal text-secondary-50 bg-clip-padding  border  border-solid border-gray-700 rounded-md transition ease-in-out m-0 focus:text-secondary-50 dark:text-gray-900 focus:border-primary-600  focus:outline-none;
 }
+
+.open-drawer {
+  @apply visible;
+  transform: none !important;
+}
+.close-drawer {
+  @apply invisible;
+  transform: none !important;
+}
+
+.main-bg {
+  background-image: url("./images/main-bg.svg");
+}

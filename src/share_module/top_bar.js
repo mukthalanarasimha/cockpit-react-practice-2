@@ -1,11 +1,11 @@
 export const TopBar = () => {
   return (
-    <nav className="fixed top-0 w-full flex flex-wrap items-center justify-between py-3 bg-secondary-950 4xl:!px-24 xl:px-16 4xl:!h-48 xl:h-20 text-secondary-200 shadow-lg navbar navbar-expand-lg navbar-light">
+    <nav className="static top-0 w-full flex flex-wrap items-center justify-between py-3 bg-secondary-950 px-16 h-20 text-secondary-200 shadow-lg navbar navbar-expand-lg navbar-light">
       <div className="container-fluid w-full flex flex-wrap items-center justify-between">
         <div className="flex-grow items-center">
           <p>Logo</p>
         </div>
-        <div class="flex items-center">
+        <div className="flex items-center">
           <div className="dropdown relative">
             <a
               class="dropdown-toggle flex items-center hidden-arrow"
