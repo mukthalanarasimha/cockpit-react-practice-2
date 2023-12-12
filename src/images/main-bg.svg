@@ -1,0 +1,66 @@
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="-0.034668" y="0.134766" width="1440" height="2229" fill="black"/>
+<g filter="url(#filter0_f_1902_28429)">
+<circle cx="1277.97" cy="927.635" r="178.5" fill="#FFC0A2" fill-opacity="0.3"/>
+</g>
+<g filter="url(#filter1_f_1902_28429)">
+<circle cx="867.965" cy="687.635" r="178.5" fill="#0045DD" fill-opacity="0.3"/>
+</g>
+<g filter="url(#filter2_f_1902_28429)">
+<circle cx="339.965" cy="115.635" r="159.5" fill="#4E2EFF" fill-opacity="0.4"/>
+</g>
+<g filter="url(#filter3_f_1902_28429)">
+<circle cx="110.465" cy="715.135" r="120" fill="#DD5000" fill-opacity="0.6"/>
+</g>
+<g filter="url(#filter4_f_1902_28429)">
+<circle cx="1312.97" cy="211.635" r="111.793" fill="#0045DD" fill-opacity="0.6"/>
+</g>
+<g filter="url(#filter5_f_1902_28429)">
+<circle cx="867.965" cy="1139.63" r="163.5" fill="url(#paint0_linear_1902_28429)"/>
+</g>
+<g filter="url(#filter6_b_1902_28429)">
+<rect x="-0.034668" y="0.134766" width="1440" height="2229" fill="#1D1D23" fill-opacity="0.6"/>
+</g>
+<defs>
+<filter id="filter0_f_1902_28429" x="979.465" y="629.135" width="597" height="597" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1902_28429"/>
+</filter>
+<filter id="filter1_f_1902_28429" x="489.465" y="309.135" width="757" height="757" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1902_28429"/>
+</filter>
+<filter id="filter2_f_1902_28429" x="-19.5347" y="-243.865" width="719" height="719" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1902_28429"/>
+</filter>
+<filter id="filter3_f_1902_28429" x="-209.535" y="395.135" width="640" height="640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1902_28429"/>
+</filter>
+<filter id="filter4_f_1902_28429" x="1001.17" y="-100.158" width="623.586" height="623.586" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1902_28429"/>
+</filter>
+<filter id="filter5_f_1902_28429" x="654.465" y="926.135" width="427" height="427" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_1902_28429"/>
+</filter>
+<filter id="filter6_b_1902_28429" x="-300.035" y="-299.865" width="2040" height="2829" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="150"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1902_28429"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1902_28429" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1902_28429" x1="867.965" y1="976.135" x2="867.965" y2="1303.13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0045DD"/>
+<stop offset="1" stop-color="#003CBF"/>
+</linearGradient>
+</defs>
+</svg>
